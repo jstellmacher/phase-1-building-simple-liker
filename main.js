@@ -43,7 +43,14 @@ function likeCallback(heart) {
       }, 3000);
     });
 }
-//------------------------------------------------------------------------------
+//likeCallBack is our function that refers to when the heart is liked or clicked .innerText returns text content of element
+//.classList.add will add the activated heart if the conditions are met
+//else if to specify a new condition to test, if the first condition is false
+//classList.remove if there is no response/like/click
+//.catch will allow you to define a block of code to be executed, if an error occurs in the .then block
+//if it catches an error from the server, then it will remove the hidden tag and show the modal - using the querySelector
+//lastly, it will time out after 3 seconds and add the hidden tag back into the html so it goes away!
+//3000 is milliseconds = 3 seconds
 //------------------------------------------------------------------------------
 // Don't change the code below: this function mocks the server response
 //------------------------------------------------------------------------------
